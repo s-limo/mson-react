@@ -15,6 +15,7 @@ class ButtonField extends React.PureComponent {
 
   render() {
     const {
+      id,
       label,
       type,
       disabled,
@@ -25,6 +26,7 @@ class ButtonField extends React.PureComponent {
     } = this.props;
     return (
       <Button
+        id={id}
         type={type}
         label={label}
         disabled={disabled}
@@ -39,6 +41,7 @@ class ButtonField extends React.PureComponent {
 }
 
 export default attach([
+  'id',
   'label',
   'type',
   'disabled',
